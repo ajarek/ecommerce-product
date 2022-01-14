@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title> E-commerce product page</title>
+</head>
+
+<body>
+  <header>
+    <div class="burger"><img src="./images/icon-menu.svg" alt=""></div>
+    <div class="logo">
+      <h2>sneakers</h2>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li class="close-br"><img src="./images/icon-close.svg" alt=""></li>
+        <li><a href="index.html">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a class="active-nav" href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="cart">
+      <span><img src="/images/icon-cart.svg" alt=""><span><sup class="amount">0</sup></span></span>
+      <span class="avatar"><img src="/images/image-avatar.png" alt="avatar" width=""></span>
+    </div>
+  </header>
+  <main>
+    <div class="my-cart">
+      <div class="cart-header">
+        <h5>Cart</h5>
+        <h6 class="close-cart"><img src="./images/icon-close.svg" alt=""></h6>
+      </div>
+      <div class="cart-img">You cart is empty</div>
+    </div>
+    <article>
+      <div class="row">
+        <div class="product"><img src="/images/image-product-1.jpg" alt="product"></div>
+        <div class="thumbnail">
+          <img class="prth active
+          " src="/images/image-product-1-thumbnail.jpg" alt="" id="prth1">
+          <img class="prth" src="/images/image-product-2-thumbnail.jpg" alt="" id="prth2">
+          <img class="prth" src="/images/image-product-3-thumbnail.jpg" alt="" id="prth3">
+          <img class="prth" src="/images/image-product-4-thumbnail.jpg" alt="" id="prth4">
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class="row1">
+        <div class="company">
+          <h5>Sneaker Company</h5>
+        </div>
+        <div class="title">
+          <h1>Fall Limited Edition Sneakers</h1>
+        </div>
+        <div class="desc">
+          <p> These low-profile sneakers are your perfect casual wear companion. Featuring a
+            durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        </div>
+        <div class="price">
+          <h2>$<span>125.00</span></h2>
+          <h4> 50%</h4>
+        </div>
+        <div class="through">$250.00</div>
+        <div class="wrap">
+          <div class="counter">
+            <span class="minus"><img src="./images/icon-minus.svg" alt=""></span>
+            <span class="score">0</span>
+            <span class="plus"> <img src="./images/icon-plus.svg" alt=""></span>
+          </div>
+          <div class="btn">
+            <button class="add-to-cart">
+              <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                  fill="#fff" fill-rule="nonzero" /></svg>Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+  <div class="active-states">
+    <div class="product">
+      <button class="close"><img src="./images/icon-close.svg" alt=""></button>
+      <img id="new-img" src="/images/image-product-1.jpg" alt="product">
+      <button class="previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 1 3 9l8 8" stroke="#ff7d1a" stroke-width="3" fill="none" fill-rule="evenodd" /></svg></button>
+      <button class="next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="m2 1 8 8-8 8" stroke="#ff7d1a" stroke-width="3" fill="none" fill-rule="evenodd" /></svg></button>
+    </div>
+    <div class="thumbnail">
+      <img id="th1" src="/images/image-product-1-thumbnail.jpg" alt="" class="active">
+      <img id="th2" src="/images/image-product-2-thumbnail.jpg" alt="">
+      <img id="th3" src="/images/image-product-3-thumbnail.jpg" alt="">
+      <img id="th4" src="/images/image-product-4-thumbnail.jpg" alt="">
+    </div>
+  </div>
+  <script src="./src/js/script.js"></script>
+</body>
+
+</html>
